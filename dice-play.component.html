@@ -1,0 +1,31 @@
+<! DOCKTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="dice-play.component.css">
+        <script src="dice-play.component.js"></script>
+        <title>
+            Dice Play
+        </title> 
+    </head>
+    
+    <body>
+        <div class="players">
+            <div class="player-one">
+                <div class="player-one-name">PLAYER 1</div>
+                <div class="player-one-score" id="player1Score">0</div>
+                <div class="player-one-current" onClick="updateScore()" id="player1Current">Current</div>
+            </div>
+            <div class="player-two">
+<!--            <div>-->
+                <div class="player-two-name">PLAYER 2</div>
+                <div class="player-two-score" id="player2Score">0</div>
+                <div class="player-two-current" onClick="updateScore()" id="player2Current">Current</div>
+            </div>
+        </div>
+        <button type="button" class="roll-dice" onclick="roleDice()">ROLE DICE</button>
+        <button type="button" class="hold-dice" onclick="holdDice()">HOLD DICE</button>
+        <img type="button" src="images/newGame.png" class="new-game" onclick="startNewGame()">
+        <img src="images/dice-5.png" id="diceInstance" alt="Dice" class="dice">
+    </body>
+</html>
