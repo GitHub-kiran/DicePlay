@@ -15,15 +15,17 @@
                 <div class="player-one-name">PLAYER 1</div>
                 <div class="player-one-score" id="player1Score">0</div>
                 <div class="player-one-current" onClick="updateScore()" id="player1Current">Current</div>
+                <div class="player-one-winner" id="winner1message"></div>
             </div>
             <div class="player-two">
 <!--            <div>-->
                 <div class="player-two-name">PLAYER 2</div>
                 <div class="player-two-score" id="player2Score">0</div>
                 <div class="player-two-current" onClick="updateScore()" id="player2Current">Current</div>
+                <div class="player-two-winner" id="winner2message"></div>
             </div>
         </div>
-        <button type="button" class="roll-dice" onclick="roleDice()">ROLE DICE</button>
+        <button type="button" [disable]="disableButton" class="roll-dice" onclick="roleDice()">ROLE DICE</button>
         <button type="button" class="hold-dice" onclick="holdDice()">HOLD DICE</button>
         <img type="button" src="images/newGame.png" class="new-game" onclick="startNewGame()">
         <img src="images/dice-5.png" id="diceInstance" alt="Dice" class="dice">
